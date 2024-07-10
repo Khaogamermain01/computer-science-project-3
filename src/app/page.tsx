@@ -1,113 +1,34 @@
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+export default function Page() {
+  return <div className="bg-gradient-to-br from-blue-500 to-purple-500 min-h-screen w-full p-16 flex flex-col items-center text-center gap-6">
+    <div className="flex flex-col gap-2">
+      <h1 className="text-6xl font-extrabold">My Featured Country</h1> {/* To the person spying on my code, this was a random one because I didn&apos;t know what to choose */}
+      <h2 className="text-5xl font-bold underline underline-offset-4">Australia</h2>
+    </div>
+
+    <div className="grid grid-cols-2 bg-slate-800 rounded-xl bg-opacity-75 p-8 w-full gap-8">
+      <section className="gap-2 flex flex-col h-full items-center justify-center">
+        <h3 className="text-4xl font-extrabold underline">History</h3>
+        <p className="text-xl text-gray-200">Australia&apos;s history is a tapestry woven with ancient roots and complex threads of change. For over 65,000 years, Indigenous Australians nurtured a profound connection to their land, developing intricate cultures and traditions that shaped their identities. In 1788, the arrival of British settlers under Captain James Cook dramatically altered this landscape, bringing with it waves of cultural exchange, conflict, and transformation. Through the 19th and 20th centuries, Australia evolved from a collection of colonies into a unified nation, characterized by its vibrant multiculturalism and democratic values. Today, Australians embrace their diverse heritage while striving to reconcile with the deep historical injustices experienced by Indigenous peoples, fostering a modern society defined by resilience and inclusivity.</p>
+      </section>
+      <div className="flex items-center justify-center w-full">
+        <Image src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F06fb5a2c-f7b1-11e5-96db-fc683b5e52db?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1" alt="History of Australia Image" className="h-fit w-fit rounded-2xl" width={1} height={1} unoptimized />
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <section className="gap-2 flex flex-col h-full items-center justify-center">
+        <h3 className="text-4xl font-extrabold underline">Food</h3>
+        <p className="text-xl text-gray-200">Australian cuisine is a fascinating blend of flavors and influences that reflect the country&apos;s diverse history and multicultural society. Indigenous Australians have long relied on native ingredients like kangaroo and bush fruits, prepared with traditional techniques that emphasize connection to the land. When British settlers arrived, they brought dishes like meat pies and hearty roasts, which became staples in Australian homes. Over time, waves of immigrants from Europe, Asia, and beyond introduced their own culinary traditions, enriching the local food scene with Italian pastas, Greek souvlaki, spicy Asian curries, and Middle Eastern kebabs. Today, Australian cuisine celebrates fresh, seasonal produce like tropical fruits and seafood from pristine waters, alongside world-class wines from vineyards across the country. It&apos;s a vibrant tapestry of flavors that reflects the warmth and diversity of Australia&apos;s people and culture.</p>
+      </section>
+      <div className="flex items-center justify-center w-full">
+        <Image src="https://jesspryles.com/wp-content/uploads/2021/01/meat-pies-70-scaled.jpg" alt="Australian Meat Pie" className="h-fit w-fit rounded-2xl" width={1} height={1} unoptimized />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <section className="gap-2 flex flex-col h-full items-center justify-center">
+        <h3 className="text-4xl font-extrabold underline">Tourism</h3>
+        <p className="text-xl text-gray-200">Australia&apos;s tourism industry paints a picture of stunning landscapes, vibrant cities, and unforgettable experiences that beckon travelers from all corners of the globe. From the iconic Sydney Opera House standing proudly against the harbor&apos;s backdrop to the ancient majesty of Uluru glowing at sunset, every corner of Australia tells a unique story. Cities like Sydney and Melbourne pulse with energy, offering a blend of cultural attractions, world-class dining, and buzzing nightlife. Beyond the urban bustle, the Outback stretches out with its vast red deserts and shimmering night skies, inviting adventurers to explore its rugged beauty. Along the coast, pristine beaches invite relaxation, while the Great Barrier Reef teems with marine life waiting to be discovered. Indigenous cultural tours offer insights into ancient traditions and spiritual connections to the land, while gourmet food and wine tours showcase the country&apos;s diverse culinary offerings. Whether it&apos;s surfing at Bondi Beach, hiking in the Blue Mountains, or simply savoring a seafood feast by the waterfront, Australia&apos;s tourism promises an enriching journey filled with warmth, hospitality, and natural wonders.</p>
+      </section>
+      <div className="flex items-center justify-center w-full">
+        <Image src="https://cdn.prod.website-files.com/5b6bc984b3323e4065ff1932/5d82d675e8178dcdc461962f_5d1d40940dba3260a45d01a7_australian_tourism_industry_hero_image.jpeg" alt="Australia Tourism" className="h-fit w-fit rounded-2xl" width={1} height={1} unoptimized />
       </div>
-    </main>
-  );
+    </div>
+  </div>
 }
