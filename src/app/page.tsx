@@ -30,5 +30,10 @@ export default function Page() {
         <Image src="https://cdn.prod.website-files.com/5b6bc984b3323e4065ff1932/5d82d675e8178dcdc461962f_5d1d40940dba3260a45d01a7_australian_tourism_industry_hero_image.jpeg" alt="Australia Tourism" className="h-fit w-fit rounded-2xl" width={1} height={1} unoptimized />
       </div>
     </div>
+
+    <div className="flex flex-col gap-2">
+      <h1 className="text-6xl font-extrabold">Australia&apos;s Country Map</h1>
+    </div>
+    <Image src="https://cdn.mappr.co/wp-content/uploads/2024/01/australia-states-map.jpg?w=450&h=450&scale.option=fill&cw=450&ch=450&cx=center&cy=center" alt="Australia Tourism" className="h-fit w-1/3 rounded-2xl" width={1} height={1} unoptimized />
   </div>
 }
