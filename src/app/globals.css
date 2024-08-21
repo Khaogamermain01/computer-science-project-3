@@ -17,6 +17,9 @@
 }
 
 body {
+  background-image: url(/abstract-pattern-design_1053-534.avif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
